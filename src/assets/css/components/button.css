@@ -1,0 +1,201 @@
+
+	.button {
+		display: inline-flex;
+		position: relative;
+		-webkit-appearance: none;
+		align-items: center;
+		background-color: var(--clr-background);
+		border-radius: 0.4em;
+		border: 1px solid var(--grey-500);
+		box-shadow: none;
+		cursor: pointer;
+        color: var(--grey-600);
+		font-size: 15px;
+		height: 2.5em;
+		justify-content: center;
+		line-height: 1.5;
+		padding: calc(0.5em - 1px) calc(0.75em - 1px);
+		text-align: center;
+		transition: all 200ms ease;
+		vertical-align: top;
+		white-space: nowrap;
+	}
+	
+    .button:hover {
+        color: var(--grey-700);
+		background-color: var(--grey-200);
+	}
+
+    .button:focus,
+    .button.is-focused {
+        box-shadow: 0 0 0 0.125em var(--grey-200);
+    }
+
+    /* button primary */
+    .button.is-primary {
+        background-color: var(--clr-primary);
+        border-color: var(--clr-primary-darken);
+        color: var(--grey-100);
+    }
+
+    .button.is-primary.is-light {
+        background-color: var(--clr-primary-lighten);
+        border-color: var(--clr-primary-darken);
+        color: var(--clr-primary);
+    }
+
+    .button.is-primary.is-hovered,
+    .button.is-primary:hover {
+        background-color: var(--clr-primary-darken);
+        border-color: transparent;
+        color: var(--clr-primary-lighten);
+    }
+
+    .button.is-primary:focus,
+    .button.is-primary.is-focused {
+        box-shadow: 0 0 0 0.125em var(--clr-primary);
+    }
+
+    /* button success */
+    .button.is-success {
+        background-color: var(--clr-success);
+        border-color: var(--clr-success-darken);
+        color: var(--grey-100);
+    }
+
+    .button.is-success.is-light {
+        background-color: var(--clr-success-lighten);
+        border-color: var(--clr-success-lighten);
+        color: var(--clr-success);
+    }
+
+    .button.is-success.is-hovered,
+	.button.is-success:hover {
+		background-color: var(--clr-success-darken);
+		border-color: transparent;
+        color: var(--clr-success-lighten);
+	}
+
+    .button.is-success:focus,
+    .button.is-success.is-focused {
+        box-shadow: 0 0 0 0.125em var(--clr-success);
+    }
+
+    /* button info */
+    .button.is-info {
+        background-color: var(--clr-info);
+        border-color: var(--clr-info-darken);
+        color: var(--grey-100);
+    }
+
+    .button.is-info.is-hovered,
+    .button.is-info:hover {
+        background-color: var(--clr-info-darken);
+        border-color: transparent;
+        color: var(--clr-info-lighten);
+    }
+
+    .button.is-info:focus,
+    .button.is-info.is-focused {
+        box-shadow: 0 0 0 0.125em var(--clr-info);
+    }
+
+
+    /* button danger */
+    .button.is-danger {
+        background-color: var(--clr-danger);
+        border-color: var(--clr-danger-darken);
+        color: var(--grey-100);
+    }
+
+    .button.is-danger.is-hovered,
+    .button.is-danger:hover {
+        background-color: var(--clr-danger-darken);
+        border-color: transparent;
+        color: var(--clr-danger-lighten);
+    }
+
+    .button.is-danger:focus,
+    .button.is-danger.is-focused {
+        box-shadow: 0 0 0 0.125em var(--clr-danger);
+    }
+    /* button error */
+    .button.is-error {
+        background-color: var(--clr-error);
+        border-color: var(--clr-error-darken);
+        color: var(--grey-100);
+    }
+
+    .button.is-error.is-hovered,
+    .button.is-error:hover {
+        background-color: var(--clr-error-darken);
+        border-color: transparent;
+        color: var(--clr-error-lighten);
+    }
+
+    .button.is-error:focus,
+    .button.is-error.is-focused {
+        box-shadow: 0 0 0 0.125em var(--clr-error);
+    }
+
+    /* button link */
+    .button.is-link {
+        background-color: transparent;
+        border-color: transparent;
+        color: var(--clr-primary);
+    }
+
+    .button.is-link.is-hovered,
+    .button.is-link:hover {
+        background-color: var(--clr-primary-darken);
+        border-color: transparent;
+        color: var(--clr-primary-lighten);
+    }
+
+    .button.is-link:focus,
+    .button.is-link.is-focused {
+        box-shadow: 0 0 0 0.125em var(--clr-primary);
+    }
+
+
+
+
+    /* button small */
+    .button.is-small {
+        font-size: 12px;
+        height: 1.5em;
+        padding: 0.25em 0.5em;
+    }
+
+    /* button large */
+    .button.is-large {
+        font-size: 18px;
+        height: 3em;
+        padding: 0.75em 1.5em;
+    }
+
+    /* button fullwidth */
+    .button.is-fullwidth {
+        display: block;
+        width: 100%;
+    }
+
+    /* button inverted */
+    .button.is-inverted {
+        background-color: transparent;
+        border-color: var(--clr-background);
+        color: var(--clr-background);
+    }
+
+    .button.is-inverted.is-hovered,
+    .button.is-inverted:hover {
+        background-color: var(--clr-background-darken);
+        border-color: transparent;
+        color: var(--clr-background-lighten);
+    }
+
+    .button.is-inverted:focus,
+    .button.is-inverted.is-focused {
+        box-shadow: 0 0 0 0.125em var(--clr-background);
+    }
+

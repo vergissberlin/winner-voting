@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<header>
+		<nav>
+			<router-link to="/">Home</router-link> |
+			<router-link to="/about">About</router-link> |
+			<router-link to="/create">Create</router-link> |
+			<router-link to="/style-guide">StyleGuide</router-link>
+		</nav>
+	</header>
+	<main>
+		<router-view />
+	</main>
+	<footer>Made with love and firebase</footer>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	@import "./assets/css/properties.css";
+
+	/* Layout */
+	@import "./assets/css/layout/app.css";
+	@import "./assets/css/layout/header.css";
+	@import "./assets/css/layout/main.css";
+	@import "./assets/css/layout/footer.css";
+
+	/* Import components */
+	@import "./assets/css/components/a.css";
+	@import "./assets/css/components/button.css";
+	@import "./assets/css/components/nav.css";
 </style>

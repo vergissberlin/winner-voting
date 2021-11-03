@@ -1,0 +1,19 @@
+
+	a {
+		color: var(--clr-link);
+	}
+	
+    a:hover,
+	a:focus,
+	a:active {
+		color: var(--clr-link-hover);
+		text-decoration: none;
+	}
+
+	a:visited {
+		text-decoration: dashed;
+	}
+
+	a.router-link-active {
+		color: var(--clr-text-inverse);
+	}

@@ -1,0 +1,131 @@
+	:root {
+		/* 9 shades of grey */
+		--grey-100: hsl(210, 17%, 98%);
+		--grey-200: hsl(210, 16%, 93%);
+		--grey-300: hsl(210, 14%, 89%);
+		--grey-400: hsl(210, 14%, 83%);
+		--grey-500: hsl(210, 11%, 71%);
+		--grey-600: hsl(208, 7%, 60%);
+		--grey-700: hsl(210, 9%, 35%);
+		--grey-800: hsl(210, 10%, 23%);
+		--grey-900: hsl(210, 11%, 15%);
+
+		/* Colors */
+		--clr-orange: hsl(14, 100%, 53%);
+		--clr-yellow: hsl(44, 100%, 77%);
+		--clr-green: hsl(153, 53%, 53%);
+		--clr-turquoise: hsl(171, 100%, 41%);
+		--clr-cyan: hsl(207, 61%, 53%);
+		--clr-blue: hsl(229, 53%, 53%);
+		--clr-purple: hsl(271, 100%, 71%);
+		--clr-red: hsl(348, 86%, 61%);
+
+		/* lighten */
+		--clr-orange-lighten: hsl(14, 100%, 88%);
+		--clr-yellow-lighten: hsl(44, 100%, 88%);
+		--clr-green-lighten: hsl(153, 53%, 88%);
+		--clr-turquoise-lighten: hsl(171, 100%, 88%);
+		--clr-cyan-lighten: hsl(207, 61%, 88%);
+		--clr-blue-lighten: hsl(229, 53%, 88%);
+		--clr-purple-lighten: hsl(271, 100%, 88%);
+		--clr-red-lighten: hsl(348, 86%, 88%);
+
+		/* darken */
+		--clr-orange-darken: hsl(14, 100%, 60%);
+		--clr-yellow-darken: hsl(44, 100%, 60%);
+		--clr-green-darken: hsl(153, 53%, 60%);
+		--clr-turquoise-darken: hsl(171, 100%, 60%);
+		--clr-cyan-darken: hsl(207, 61%, 60%);
+		--clr-blue-darken: hsl(229, 53%, 60%);
+		--clr-purple-darken: hsl(271, 100%, 60%);
+		--clr-red-darken: hsl(348, 86%, 60%);
+
+		--clr-primary: var(--clr-purple);
+		--clr-secondary: var(--clr-yellow);
+		--clr-info: var(--clr-cyan);
+		--clr-danger: var(--clr-orange);
+		--clr-error: var(--clr-red);
+		--clr-success: var(--clr-green);
+
+		--clr-primary-lighten: var(--clr-purple-lighten);
+		--clr-secondary-lighten: var(--clr-yellow-lighten);
+		--clr-info-lighten: var(--clr-cyan-lighten);
+		--clr-danger-lighten: var(--clr-orange-lighten);
+		--clr-error-lighten: var(--clr-red-lighten);
+		--clr-success-lighten: var(--clr-green-lighten);
+
+		--clr-primary-darken: var(--clr-purple-darken);
+		--clr-secondary-darken: var(--clr-yellow-darken);
+		--clr-info-darken: var(--clr-cyan-darken);
+		--clr-danger-darken: var(--clr-orange-darken);
+		--clr-error-darken: var(--clr-red-darken);
+		--clr-success-darken: var(--clr-green-darken);
+
+		--clr-link: var(--clr-blue);
+		--clr-link-hover: var(--clr-blue-darken);
+		--clr-link-visited: var(--clr-blue-lighten);
+
+		--clr-border: var(--grey-200);
+		--clr-background: var(--grey-100);
+	}
+
+	/* dark mode */
+	@media (prefers-color-scheme: dark) {
+		:root {
+			/* 9 shades of grey */
+			--grey-900: hsl(192, 15%, 94%);
+			--grey-800: hsl(210, 40%, 93%);
+			--grey-700: hsl(210, 40%, 89%);
+			--grey-600: hsl(210, 40%, 83%);
+			--grey-500: hsl(210, 40%, 71%);
+			--grey-400: hsl(210, 40%, 46%);
+			--grey-300: hsl(210, 40%, 36%);
+			--grey-200: hsl(210, 40%, 28%);
+			--grey-100: hsl(210, 40%, 15%);
+
+			/* Color pallet */
+			--clr-orange: hsl(28, 80%, 52%);
+			--clr-yellow: hsl(45, 89%, 50%);
+			--clr-green: hsl(145, 63%, 49%);
+			--clr-turquoise: hsl(168, 76%, 42%);
+			--clr-blue: hsl(204, 70%, 53%);
+			--clr-purple: hsl(282, 44%, 47%);
+			--clr-red: hsl(6, 78%, 57%);
+
+			/* lighten */
+			--clr-orange-lighten: hsla(14, 100%, 32%, 1);
+			--clr-yellow-lighten: hsla(44, 100%, 32%, 1);
+			--clr-green-lighten: hsla(153, 53%, 32%, 1);
+			--clr-turquoise-lighten: hsla(171, 100%, 32%, 1);
+			--clr-blue-lighten: hsla(229, 53%, 32%, 1);
+			--clr-purple-lighten: hsla(271, 100%, 32%, 1);
+			--clr-red-lighten: hsla(348, 86%, 32%, 1);
+
+			/* darken */
+			--clr-orange-darken: hsl(14, 100%, 40%);
+			--clr-yellow-darken: hsl(44, 100%, 40%);
+			--clr-green-darken: hsl(153, 53%, 40%);
+			--clr-turquoise-darken: hsl(171, 100%, 40%);
+			--clr-blue-darken: hsl(229, 53%, 40%);
+			--clr-purple-darken: hsl(271, 100%, 40%);
+			--clr-red-darken: hsl(348, 86%, 40%);
+
+			--clr-primary: var(--clr-purple);
+			--clr-secondary: var(--clr-yellow);
+			--clr-info: var(--clr-cyan);
+			--clr-danger: var(--clr-orange);
+			--clr-error: var(--clr-red);
+			--clr-success: var(--clr-green);
+
+			--clr-primary-lighten: var(--clr-purple-lighten);
+			--clr-secondary-lighten: var(--clr-yellow-lighten);
+			--clr-info-lighten: var(--clr-cyan-lighten);
+			--clr-danger-lighten: var(--clr-orange-lighten);
+			--clr-error-lighten: var(--clr-red-lighten);
+			--clr-success-lighten: var(--clr-green-lighten);
+
+			--clr-link: var(--clr-blue);
+			--clr-link-hover: var(--clr-blue-darken);
+			--clr-link-visited: var(--clr-blue-lighten);
+		}
+	}
