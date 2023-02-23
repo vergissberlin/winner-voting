@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import StyleGuide from '../views/StyleGuide.vue'
-import Create from '../views/Create.vue'
+import UserCreate from '../views/UserCreate.vue'
+import UserEdit from '../views/UserEdit.vue'
 
 const routes = [
   {
@@ -10,10 +11,16 @@ const routes = [
     component: Home
   },
   {
-    path: '/create',
-    name: 'Create voting',
-    component: Create
-  },
+    path: '/user/create',
+    name: 'Create user',
+    component: UserCreate
+    },
+    {
+        path: '/user/edit/:id',
+        name: 'Edit users',
+        component: UserEdit
+    },
+
   {
     path: '/style-guide',
     name: 'StyleGuide',

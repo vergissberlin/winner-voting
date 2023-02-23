@@ -1,29 +1,43 @@
 <template>
 	<header>
-		<nav>
-			<router-link to="/">Home</router-link> |
-			<router-link to="/about">About</router-link> |
-			<router-link to="/create">Create</router-link> |
-			<router-link to="/style-guide">StyleGuide</router-link>
+		<nav
+			class="navbar"
+			role="navigation"
+			aria-label="main navigation"
+		>
+			<div class="navbar-brand">
+				<router-link
+					class="navbar-item"
+					to="/"
+				>Home</router-link>
+				<router-link
+					class="navbar-item"
+					to="/about"
+				>About</router-link>
+				<router-link
+					class="navbar-item"
+					to="/user/create"
+				>User-Create</router-link>
+				<router-link
+					class="navbar-item"
+					to="/user/edit"
+				>User-Edit</router-link>
+				<router-link
+					class="navbar-item"
+					to="/style-guide"
+				>StyleGuide</router-link>
+			</div>
 		</nav>
 	</header>
-	<main>
+	<main class="container">
 		<router-view />
 	</main>
-	<footer>Made with love and firebase</footer>
+	<footer class="footer">Made with love and firebase</footer>
 </template>
 
 <style>
-	@import "./assets/css/properties.css";
-
-	/* Layout */
-	@import "./assets/css/layout/app.css";
-	@import "./assets/css/layout/header.css";
-	@import "./assets/css/layout/main.css";
-	@import "./assets/css/layout/footer.css";
-
-	/* Import components */
-	@import "./assets/css/components/a.css";
-	@import "./assets/css/components/button.css";
-	@import "./assets/css/components/nav.css";
+	@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+	@import "https://unpkg.com/bulma-prefers-dark";
+    /* import font awesome */
+    @import "https://use.fontawesome.com/releases/v5.10.0/css/all.css";
 </style>

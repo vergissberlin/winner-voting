@@ -1,7 +1,9 @@
 <template>
-	<div class="home">
+	<section class="section">
+		<h1 class="title">Welcome</h1>
+		<h2 class="subtitle">Make it possible to create a new project</h2>
 		<HelloWorld msg="Welcome to Your Vue.js App" />
-	</div>
+	</section>
 </template>
 
 <script>
